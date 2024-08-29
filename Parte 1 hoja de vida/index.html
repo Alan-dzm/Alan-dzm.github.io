@@ -1,0 +1,181 @@
+<!--Alan david zea marin  -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum  vitae</title>
+    <!-- Este link reel enlaza el archivo Css para los estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Este link reel enlaza la pagina web de font awesome para añadir iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+<body>
+    <!--Este es el contenedor principal de carta de presentacion-->
+    <div class ="container">
+        <!--En esta parte coloco como un contenedor donde va mi foto de perfil y mi nombre-->
+        <div class="cabecera">
+            <!--Aqui cargo mi foto de perfil -->
+            <div class="contenedor_foto_perfil"><img src="foto_perfil.jpeg"
+                > </div>
+            <!--Mi nombre y el puesto  -->
+            <div class="nombre_puesto">
+                <h1>Alan David Zea Marin</h1>
+                <h2>Desarrollador de Software</h2>
+            </div>
+            
+
+        </div>
+
+        <!-- Aqui esta todo el contenido de la carta de presentacion-->
+        <div class="contenido_cv">
+            <!--En este contenedor se van a colocar las habilidades  y mi perfil profesional-->
+            <section class ="habilidades">
+                
+                <h3>Perfil Profesional</h3>
+                <hr>
+                <br>
+                <p class="carta_presentacion"></p>
+                <br>
+                <!--Aqui agrego una lista de habilidades y agrege el fas fa cogs de font awesome para agregar un icono-->
+                <h3><i class="fas fa-cogs"></i>habilidades</h3>
+                <hr>
+                <!--en este grafico agrege un icono y lo reparti por sectores para agregar un color a cada sector-->
+                <div class ="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+
+                </div>
+                <!-- Aqui agrego las habilidades -->
+                <div class="habilidades">Java</div>
+                <!-- Este id de "taskList" esta para que cuando use el script de js, me permite agregar,editar o eliminar  el 
+                texto donde estan ubicadas mis habilidades -->
+                <p id="taskList"></p>
+                <br>
+                <!-- en este h3 agrege un icono al lado de idiomas-->
+                <h3><i class="fas fa-language"></i>Idiomas</h3>
+                <hr>
+                <!-- denuevo agrege el icono con forma de donut y agrege 3 sectores para agregar 3 colores 
+                en un mismo circulo-->
+                <div class ="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+
+                </div>
+                <!--Agrege otro icono  -->
+
+                <div class="habilidades">Ingles</div>
+                <br>
+                <div class ="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+
+                </div>
+                
+                <div class="habilidades">Español</div>
+                <br>
+
+                <ul>
+                <!-- agrege otro icono para que me quede al lado de informacion -->
+                <h4><i class="fas fa-envelope"></i>Informacion de contacto</h4>
+                <hr>
+                <li>Email: alandavidzea369@gmail.com</li>
+                <li>Telefono: 3106238277</li>
+                <li>LinkedIn: <a href="#">Perfil en linkedIn</a></li>
+                </ul>
+
+
+
+
+            </section>
+            <!-- En este contenedor esta la parte de experiencia laboral -->
+            <section class="experiencia">
+                <hr>
+                <!--denuevo agrege un icono de font awesome -->
+                <h3><i class="fas fa-briefcase "></i>Experiencia Laboral</h3>
+                <div class="nombre_empresa">ninguna</div>
+                <p id="eduList"></p>
+                <br>
+
+                <br>
+                <br>
+                <hr>
+                <!--icono para la informacion  -->
+                <h3><i class= " fas fa-graduation-cap "></i>Formacion </h3>
+                <h4>Tecnico en esistemas</h4>
+                <div class="nombre_empresa">Sena </div>
+                <div class="año_puesto">2017-2019</div>
+                <br>
+                <br>
+                <br>
+
+                <hr>
+                <!-- denuevo un icono -->
+                <h3><i class="fas fa-graduation-cap"></i>Formacion</h3>
+                <h4>Auxiliar en sistemas </h4>
+                <div class="nombre_empresa">Nombre Colegio</div>
+                <div class="año_puesto">2020-2021</div>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <!--otro icono -->
+                <h3><i class="fas fa-graduation-cap"></i>Formacion</h3>
+                <h4>Carrera o Diplomado</h4>
+                <div class="nombre_empresa">Nombre Colegio</div>
+                <div class="año_puesto">2024-2024</div>
+                <br>
+                <br>
+                <hr>
+            </div>
+                <br>
+            </section>
+            <!-- el taskList donde va a aser ingresado los textos  -->
+            <ul id="taskList">
+                <!-- Lista empieza sin elementos-->
+                </ul>
+            
+            
+                <button id="addTask">Agregar habilidad</button>
+                <button id="deleteTask">Borrar habilidad</button>
+                <button id="editTask">Editar habilidad</button>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <ul id="eduList">
+                    <!-- Lista empieza sin elementos-->
+                    </ul>
+                
+                
+                    <button id="addedu">Agregar experiencia</button>
+                    <button id="deleteedu">Borrar experiencia</button>
+                    <button id="editedu">Editar experiencia</button>
+                    
+                <script src="scripts.js"></script>
+
+        </div>
+
+    </div>
+
+    
+
+
+    
+
+    
+</body>
+</html>
+
+
+
